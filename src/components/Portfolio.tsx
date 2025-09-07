@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Github, ExternalLink, Award, GraduationCap, Code, Users } from "lucide-react";
-import professionalImage from "@/assets/professional-placeholder.jpg";
+const professionalImage = "/lovable-uploads/944c8792-0cef-422b-b232-6f32e4287b77.png";
 
 const Portfolio = () => {
   return (
@@ -11,11 +11,14 @@ const Portfolio = () => {
       <section className="relative bg-portfolio-blue-subtle py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-8">
-            <img
-              src={professionalImage}
-              alt="Professional Photo"
-              className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover"
-            />
+            <div className="relative inline-block mb-6">
+              <img
+                src={professionalImage}
+                alt="Srinidhi - Professional Photo"
+                className="w-40 h-40 rounded-full mx-auto border-4 border-white shadow-2xl object-cover ring-4 ring-portfolio-blue/20 hover:ring-portfolio-blue/40 transition-all duration-300"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-portfolio-blue/10 to-transparent"></div>
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Srinidhi
             </h1>
