@@ -17,7 +17,6 @@ const Portfolio = () => {
                 alt="Srinidhi - Professional Photo"
                 className="w-40 h-40 rounded-full mx-auto border-4 border-white shadow-2xl object-cover ring-4 ring-portfolio-blue/20 hover:ring-portfolio-blue/40 transition-all duration-300"
               />
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-portfolio-blue/10 to-transparent"></div>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Srinidhi
